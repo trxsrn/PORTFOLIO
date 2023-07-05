@@ -11,13 +11,13 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="">IXIECODE</a>
+            <a href="index.php">IXIECODE</a>
         </div>
         <ul class="menu">
-            <li><a href="index.html" <?php if ($activePage == 'home') echo 'class="active"'; ?>HOME</a></li>
-            <li><a href=aboutme.html"" <?php if ($activePage == 'about') echo 'class="active"'; ?>ABOUT ME</a></li>
-            <li><a href="project.html" <?php if ($activePage == 'projects') echo 'class="active"'; ?>PROJECTS</a></li>
-            <li><a href="contact.html" <?php if ($activePage == 'contact') echo 'class="active"'; ?>CONTACT</a></li>
+            <li><a href="index.php" <?php if ($activePage == 'home') echo 'class="active"'; ?>>HOME</a></li>
+            <li><a href="aboutme.php" <?php if ($activePage == 'about') echo 'class="active"'; ?>>ABOUT ME</a></li>
+            <li><a href="projects.php" <?php if ($activePage == 'projects') echo 'class="active"'; ?>>PROJECTS</a></li>
+            <li><a href="contact.php" <?php if ($activePage == 'contact') echo 'class="active"'; ?>>CONTACT</a></li>
         </ul>
     </nav>    
 </body>

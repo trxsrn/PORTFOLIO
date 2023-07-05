@@ -58,3 +58,20 @@ nav {
     opacity: 1;
     transform: scaleX(1);
 }
+
+/* @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+  
+    }
+  
+    nav{
+      border-bottom: none;
+      position: sticky;
+      top: 0;
+    }
+  
+    .logo{
+      height: 50px;
+    }
+} */
