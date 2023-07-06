@@ -1,0 +1,25 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    background: linear-gradient(149deg, #D3C4AF 15.31%, #D8B8D8 47.92%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.front
+{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+img
+{
+    transform: scaleX(-1);  
+}
