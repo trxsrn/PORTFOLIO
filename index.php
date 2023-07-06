@@ -14,9 +14,6 @@
 </head>
 <body>
     <div class="front">
-        <div class="picture">
-            <img src="css/img/that.png">
-        </div>
         <div class="greetings">
             <div class="name">
                 <h5>I AM</h5>
@@ -27,6 +24,9 @@
                 <button>HIRE ME</button>
                 <button>RESUME</button>
             </div>
+        </div>
+        <div class="picture">
+            <img src="css/img/that.png">
         </div>
     </div>
 </body>
