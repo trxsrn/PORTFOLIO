@@ -17,8 +17,6 @@ body
     display: flex;
     width: 100%;
     padding: 0;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 h1, h4, h5
 {
@@ -43,16 +41,48 @@ img
 
 .greetings, .picture
 {
-    /* border: 2px solid red; */
     padding: 20px;
-    margin: 7% 10%;
+    margin: 7% 8%;
 }
 
-button
+.button
 {
+    display: block;
+    width: 100px;
     border: 1px solid #7366DE;
     background: linear-gradient(134deg, #C0B9FB 0.92%, rgba(115, 102, 222, 0.00) 100%);
     box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 30px;
     margin: 10px 20px 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.about
+{
+    display: flex;
+    margin: 10%;
+}
+
+.about img
+{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.63);
+}
+
+.about-details
+{
+    margin: 10%;
+}
+
+.about h3
+{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 3px solid #292674;
+}
+
+.about p
+{
+    text-align: center;
 }
