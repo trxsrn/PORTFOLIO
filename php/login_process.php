@@ -8,10 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $password = $_POST['password'];
 
    // Implement your login verification logic here
-   $hashedPassword = md5($password); // Not recommended, use a stronger hashing algorithm
+//    $hashedPassword = md5($password); // Not recommended, use a stronger hashing algorithm
 
    // Perform the login verification
-   if (verifyLogin($connection, $username, $hashedPassword)) {
+   if (verifyLogin($connection, $username, $password)) {
       // Login successful
       echo 'success';
    } else {
@@ -21,11 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Function to verify login credentials against the database
-function verifyLogin($connection, $username, $hashedPassword) {
+function verifyLogin($connection, $username, $password) {
    // Implement your database query here to check the user credentials using prepared statements
    $sql = "SELECT * FROM user WHERE username = ? AND password = ?";
    $stmt = mysqli_prepare($connection, $sql);
-   mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPassword);
+   mysqli_stmt_bind_param($stmt, "ss", $username, $password);
    mysqli_stmt_execute($stmt);
    $result = mysqli_stmt_get_result($stmt);
    $user = mysqli_fetch_assoc($result);
