@@ -45,17 +45,19 @@ img
     margin: 7% 8%;
 }
 
+.btn{
+    display: flex;
+}
+
 .button
 {
-    display: block;
     width: 100px;
-    border: 1px solid #7366DE;
-    background: linear-gradient(134deg, #C0B9FB 0.92%, rgba(115, 102, 222, 0.00) 100%);
+    background: #000;
     box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 30px;
     margin: 10px 20px 10px 0;
-    border-radius: 10px;
     text-decoration: none;
+    color: white;
 }
 
 .about
@@ -66,8 +68,8 @@ img
 
 .about img
 {
-    border-radius: 10px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.63);
+    position: relative;
 }
 
 .about-details
@@ -86,3 +88,26 @@ img
 {
     text-align: center;
 }
+  /* CSS for the container that holds both the SVG and the image */
+        .picture {
+            position: relative;
+            width: 500px; /* Adjust this width to your desired size */
+        }
+
+        /* CSS for the SVG */
+        .svg-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CSS to hide the default image border */
+        .picture img {
+            display: block;
+            border: none;
+            width: 100%;
+            height: auto;
+        }
+
