@@ -17,7 +17,7 @@
     <p> Administrator </p>
   </div>
   <div class="container">
-    <form id="loginForm" method="POST">
+    <form action="php/login_process.php" id="loginForm" method="POST">
       <div class="field">
         <input type="text" name="username" placeholder="Username" required>
       </div>
@@ -33,9 +33,9 @@
   </div>
   
   <!-- LOGIN NOTIFIER IF SUCCESS OR NOT -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
-  <script src="js/login.js"></script> 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script> -->
+  <!-- <script src="js/login.js"></script>  -->
 
   <!-- Javascript for password Visibility -->
   <script>
