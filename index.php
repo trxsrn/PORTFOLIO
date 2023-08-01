@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-...">
 </head>
 <body>
     <div class="front">
@@ -31,23 +31,77 @@
             <img src="css/img/that.png">
         </div>
     </div>
+    <!-- <div class="scroll">
+        <i class="fas fa-angle-down"></i>
+    </div> -->
     <div class="about">
-            <div class="myphoto">
-                <img src="css/img/ME.jpg">
-            </div>
             <div class="about-details">
-                <h3>ABOUT ME</h3>
-                <p>Motivated third-year college student from <b>Rizal Technological University </b>actively seeking opportunities for self-development and acquiring new skills. Committed to continuous learning and open to diverse experiences. Eager to collaborate with like-minded individuals and build meaningful connections. Proactive in developing practical skills such as problem-solving, communication, leadership, and adaptability.</p>
+                <div class="details">
+                    <h3>ABOUT ME</h3>
+                    <p>Motivated third-year college student from <b>Rizal Technological University </b>actively seeking opportunities for self-development and acquiring new skills. Committed to continuous learning and open to diverse experiences. Eager to collaborate with like-minded individuals and build meaningful connections. Proactive in developing practical skills such as problem-solving, communication, leadership, and adaptability.</p>
+                    <div class="learn-more-btn">
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
             </div>
     </div>
     <div class="projects">
-        <h3 class="sub-header"> PROJECTS </h3>
+        <div class="sub-header">
+            <h1> PROJECTS </h1>
+        </div>
         <div class="website"> 
-            <h5>Website/ Web Applications</h5>
+            <div class="website_headers">
+                <h3>Website/ Web Applications</h3>
+                <a href="#" class="view-all">See All</a>
+            </div>
+            <div class="web-preview">
                 <div class="web">
-                    <img src=""/>
+                    <img src="css/img/TRR-Main.gif"/>
+                    <h5>The Rizalian Review Main Website </h5>
                 </div>
-            <h5>Mobile Applications </h5>
+                <div class="web">
+                    <img src="css/img/TRR-Main.gif"/>
+                    <h5>The Rizalian Review Main Website </h5>
+                </div>
+                <div class="web">
+                    <img src="css/img/TRR-Main.gif"/>
+                    <h5>The Rizalian Review Main Website </h5>
+                </div>
+                <div class="web">
+                    <img src="css/img/TRR-Main.gif"/>
+                    <h5>The Rizalian Review Main Website </h5>
+                </div>
+            </div>
+            <div class="mobile_headers">
+                <h3>Mobile Applications</h3>
+                <a href="#" class="view-all">See All</a>
+            </div>
+            <div class="app-preview">
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div>
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div>
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div>
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div>
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div>
+                <div class="app">
+                    <img src="css/img/TB - icon.png">
+                    <h5>Tasty Bites </h5>
+                </div> 
+            </div>
         </div>
     </div>
 
