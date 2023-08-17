@@ -2,7 +2,7 @@
 {
     background-image: url('img/ME.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 }
@@ -10,7 +10,7 @@
 .about-details
 {
     background-color: #0000009b;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -45,11 +45,17 @@ p
     padding: 20px;
 }
 
+.header
+{
+  display: flex;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10% 0 10%;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -66,6 +72,13 @@ p
   
   /* Container around content */
   .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  .img {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -113,7 +126,7 @@ p
       width: 45%;
   }
   
-  a
+ .content a
   {
       text-decoration: none;
       color: black;
@@ -132,7 +145,7 @@ p
     }
     
     /* Full-width containers */
-    .container {
+    .container{
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
