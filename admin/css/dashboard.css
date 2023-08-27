@@ -1,0 +1,49 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #D3C4AF;
+}
+
+.board
+{
+    text-align: center;
+    width: 85%;
+    left: 15%;
+    position: absolute;
+    margin: 3vh 0;
+}
+
+.resume-headers
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+
+table
+{
+    width: 85%;
+    border-collapse: collapse;
+    margin: 0 5%;
+    color: white;
+    background-color: white;
+}
+
+table th
+{
+    background-color: #646060;
+    padding: 5px;
+}
+
+table tr
+{
+    color: black;
+    padding: 5px;
+    text-align: left;
+}
