@@ -11,39 +11,77 @@ body
 
 .board
 {
-    text-align: center;
     width: 85%;
     left: 15%;
     position: absolute;
-    margin: 3vh 0;
 }
 
-.resume-headers
+.greeting
+{
+    text-align: center;
+    margin: 3vh;
+}
+
+.summary
 {
     display: flex;
     justify-content: space-between;
-    margin: 0 5%;
+    margin: 50px;
 }
 
-
-table
+.graph
 {
-    width: 85%;
-    border-collapse: collapse;
-    margin: 0 5%;
-    color: white;
+    width: 35%;
+    height: 200px;
+}
+
+.graph, .count
+{
     background-color: white;
 }
 
-table th
+.live-resume
 {
-    background-color: #646060;
-    padding: 5px;
+    margin: 50px;
+    background-color: white;
+    font-size: 14px;
 }
 
-table tr
+.live-resume-header
 {
-    color: black;
-    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: bolder;
+}
+button
+{
+    padding: 0 10px;
+    background-color: #353434;
+    color: white;
+    border-radius: 20px;
+}
+
+.live-resume table
+{
+    width: 100%;
     text-align: left;
+    border-collapse: collapse;
+}
+
+.live-resume table tr
+{
+   
+}
+
+.live-resume table th
+{
+    background-color: #353434;
+    padding: 10px;
+    color: white;
+}
+
+.live-resume table td
+{
+    padding: 10px;
 }

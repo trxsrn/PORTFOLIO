@@ -12,7 +12,7 @@
     left: 0%;
     width: 15%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
 }
 
 .side-nav-bar h3
@@ -31,7 +31,7 @@ li a
     padding: 0 10px;
     color: white;
     text-decoration: none;
-    
+    list-style-type: none;
 }
 
 li a:hover
@@ -43,7 +43,6 @@ li a:hover
 .sub-setting
 {
     display: none;
-    list-style-type: none;
 }
 
 li:hover .sub-setting
