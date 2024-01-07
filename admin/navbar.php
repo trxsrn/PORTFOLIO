@@ -15,8 +15,13 @@
             <h3>IXIECODE</h3>
             <ul>
                 <li><a href="dashboard.php">DASHBOARD</a></li>
-                <li><a>PERSONAL INFO</a></li>
-                <li><a>PROJECTS</a></li>
+                <li><a href="personal_info.php">PERSONAL INFO</a></li>
+                <li><a class="setting">PROJECTS <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-setting">
+                        <li><a href="#">ACTIVE PROJECTS</a></li> 
+                        <li><a href="#">ARCHIVE PROJECTS</a></li>        
+                    </ul>
+                </li>
                 <li><a class="setting">SETTINGS <i class="fa fa-caret-down"></i></a>
                     <ul class="sub-setting">
                         <li><a href="#">PERSONALIZATION</a></li>        
