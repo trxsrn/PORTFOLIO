@@ -92,24 +92,8 @@
                     <h5>FOOD MARKET </h5>
                 </div>
                 <div class="app">
-                    <img src="css/img/TB - icon.png">
-                    <h5>MINI GAMES</h5>
-                </div>
-                <div class="app">
-                    <img src="css/img/TB - icon.png">
-                    <h5>SIMPLE CALCULATOR</h5>
-                </div>
-                <div class="app">
-                    <img src="css/img/TB - icon.png">
-                    <h5>BMI CALCULATOR</h5>
-                </div>
-                <div class="app">
                     <img src="css/img/CHINESEZODIAC.png">
                     <h5>CHINESE ZODIAC SIGN</h5>
-                </div> 
-                <div class="app">
-                    <img src="css/img/TB - icon.png">
-                    <h5>HOROSCOPE</h5>
                 </div> 
                 <div class="app">
                     <img src="css/img/TB - icon.png">

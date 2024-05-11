@@ -7,13 +7,20 @@
 body
 {
     background-color: #D3C4AF;
+    top: 20%;
 }
 
 .board
 {
-    width: 85%;
-    left: 15%;
+    top: 10%;
+    width: 80%;
+    left: 20%;
     position: absolute;
+}
+
+#date, #time{
+    font-size: 16px;
+    text-align: center;
 }
 
 .greeting

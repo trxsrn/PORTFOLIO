@@ -1,7 +1,3 @@
-<?php
-    include 'navbar.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <?php include 'top-navbar.php'; ?>
+    <div id="navbar"></div>
+    <div id="top-navbar"></div>
     <div class="board">
-        <div class="greeting">
-            <p id="greeting"></p>
-            <h1>TRIXIE</h1>
-        </div>
         <div class="summary">
             <div class="graph">
             <canvas id="myLineChart"></canvas>
@@ -124,8 +119,14 @@
         </div>
     </div>
 
-
     <script>
+        // Use jQuery to load external HTML
+        $(function(){
+            $("#navbar").load("navbar.html");
+            $("#top-navbar").load("top-navbar.html");
+        });
+
+        // Your Chart.js code
         var ctx = document.getElementById('myLineChart').getContext('2d');
         var myLineChart = new Chart(ctx, {
             type: 'line',
@@ -148,7 +149,5 @@
             }
         });
     </script>
-   
-   <script src="js/greetings.js"></script>
 </body>
 </html>

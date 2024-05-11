@@ -1,51 +1,55 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.side-nav-bar
-{
+.side-nav-bar {
     background-color: #000;
     color: white;
     left: 0%;
-    width: 15%;
+    width: 20%;
     height: 100vh;
     position: fixed;
 }
 
-.side-nav-bar h3
-{
+.side-nav-bar h3 {
     padding: 50px 25px;
     text-align: center;
 }
 
-li 
-{
-    padding: 10px;
+li {
+    padding: 20px;
 }
 
-li a
-{
-    padding: 0 10px;
+li a {
+    padding: 0 20px;
     color: white;
     text-decoration: none;
     list-style-type: none;
 }
 
-li a:hover
-{
+li a:hover {
     color: pink;
-
 }
 
-.sub-setting
-{
+.sub-setting {
     display: none;
 }
 
-li:hover .sub-setting
-{
+li:hover .sub-setting {
     display: block;
+    list-style-type: none;
+}
+
+.dateandtime {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.dateandtime p {
+    margin-bottom: 5px;
 }
