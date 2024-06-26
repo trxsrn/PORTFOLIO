@@ -4,12 +4,9 @@
     margin: 0;
 }
 
-body 
+body
 {
-    background: linear-gradient(149deg, #D3C4AF 15.31%, #D8B8D8 47.92%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #371418;
 }
 
 .front
@@ -17,36 +14,35 @@ body
     display: flex;
     width: 100%;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 }
-h1, h4, h5
-{
-    padding: 10px;
-}
-
 h1
 {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-align: left;
+    display: block;
+    padding: 10px;
+    color: white;
+    height: fit-content;
+
 }
 
-.front img
-{
-    transform: scaleX(-1);  
-    height: 350px;
-    width: 400px;
+
+.front
+{ 
+    color: white;
+}
+.front h1{
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 300px 300px;
+    position: relative;
+    clip: rect();
 }
 
-.greetings, .picture
-{
-    padding: 20px;
-    margin: 10% 8%;
+.front h1 pre{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 .btn{
@@ -64,32 +60,23 @@ h1
     color: white;
 }
 
-/* .scroll
-{
-    position: absolute;
-    bottom: 0;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-} */
 
 .about
 {
-    background-image: url('img/ME.jpg');
-    background-size: cover;
+    background-color: #4A1E1D;
     height: 100vh;
     position: relative;
+    padding: 10%;
     clip: rect(0px,50px,50px,0px);
+    display: flex;
 }
 
 .about img
 {
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.63);
     position: relative;
-    height: 350px;
-    width: 200;
+    height: 450px;
+    width: 300px;
 }
 
 .about-details
@@ -140,14 +127,6 @@ h1
     position: relative;
  }
 
-.svg-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .picture .pictureko {
     display: block;
     border: none;
@@ -168,7 +147,11 @@ h1
 
 .projects
 {
-    margin: 5%;
+    padding: 5%;
+}
+
+.website{
+    display: flex;
 }
 
 .web
@@ -254,8 +237,8 @@ h1
 
     .about img
     {
-        height: 250px;
-        width: 200px;
+        height: 150px;
+        width: 100px;
     }
 
     .name h1{
