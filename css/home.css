@@ -63,21 +63,30 @@ h1
 
 .about
 {
-    background-color: #4A1E1D;
+    color: white;
     height: 100vh;
     position: relative;
     padding: 10%;
-    clip: rect(0px,50px,50px,0px);
-    display: flex;
+    width: 50%;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.about.appear{
+transform: translateX(0);
+opacity: 1;
 }
 
-.about img
+.about h2
 {
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.63);
-    position: relative;
-    height: 450px;
-    width: 300px;
+    border-left: 5px solid rgb(117, 136, 242);
+    padding-left: 20px;
+    margin-bottom: 40px;
 }
+
+.about p
+
 
 .about-details
 {
@@ -216,72 +225,9 @@ h1
 }
 
 @media (max-width: 400px) {
-
-    .front
-    {
-        display: flex;
-        flex-direction: column-reverse;
+    .container {
+        flex-direction: column;
     }
-
-    .picture
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about
-    {
-        display: block;
-    }
-
-    .about img
-    {
-        height: 150px;
-        width: 100px;
-    }
-
-    .name h1{
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .name h4, h5
-    {
-        text-align: center;
-    }
-
-    .btn
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .button
-    {
-        font-size: 12px;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .myphoto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-details h3
-    {
-        border-left: none;
-        text-align: center;
-    }
-
-    .about-details p{
-        text-align: left;
-    }
-
-
 }
+
 

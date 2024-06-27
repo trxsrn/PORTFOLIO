@@ -13,14 +13,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="connection.js"></script>
 </head>
-<body>
+<body style="background: url('css/img/FORMAL\ LANDSCAPE.png');background-attachment: fixed; background-size: cover;">
     <div id="navbar"></div>
-    <div class="front" style="background: url('css/img/TRIXIE\ SORIANO\ with\ text.png');background-size: cover;">
-        <!-- <h1>TRIXIE SORIANO <pre>Full Stack Web Developer</pre></h1> -->
+    <div class="front">
+        <h1>TRIXIE SORIANO <pre>Web Developer</pre></h1>
     </div>
-    <div class="about">
-        <img src="css/img/ME WHOLE BODY.jpg">
-        <h4>About Me</h4>
+    <div class="about reveal">
+        <h2>About Me</h2>
+        <p>I am a results-oriented professional with a demonstrated ability to learn quickly and adapt to new technologies. Seeking a position that fosters continuous learning and skill development. I can design, develop and deploy a website.</p>
+        <button type="button" class="btn btn-outline-light">Learn More</button>
     </div>
     <div class="projects">
         <div class="sub-header">
@@ -36,6 +37,25 @@
             $("#navbar").load("navbar.html");
             $("#footer").load("footer.html");
         });
+    </script>
+    <script>
+        function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("appear");
+} else {
+  reveals[i].classList.remove("appear");
+}
+}
+}
+
+window.addEventListener("scroll", reveal);
     </script>
 </body>
 </html>
