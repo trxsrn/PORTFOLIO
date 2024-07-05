@@ -25,6 +25,7 @@ div.sticky {
 .front-back{
     background-image: url(img/FORMAL\ LANDSCAPE.png);
     background-size: cover;
+    height: auto;
 }
 
 .front
@@ -57,7 +58,7 @@ div.sticky {
 
 .about-back{
     display: flex;
-    background-color: #E0A75E;
+    background-color: transparent;
 }
 
 .about
@@ -126,6 +127,36 @@ div.sticky {
     height: auto;
 }
 
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  .skill {
+    box-shadow: 5px 5px #888888;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 0; /* Remove margin to use the grid gap instead */
+  }
+  
+  .rating {
+    padding: 5px 20px;
+  }
+  
+  .rating h5, p{
+    margin: 0;
+  }
+  
+  .rating p{
+    font-size: 14px;
+  }
+
 .sub-header
 {
     text-align: center;
@@ -145,6 +176,7 @@ div.sticky {
 
 .what .activity {
     background-color: white;
+    color: black;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
@@ -166,7 +198,8 @@ div.sticky {
 .projects
 {
     padding: 5%;
-    background-color: #973131;
+    background-color: #35181A;
+    color: white;
 }
 
 .website{
