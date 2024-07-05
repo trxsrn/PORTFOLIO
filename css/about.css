@@ -18,4 +18,15 @@
 .timeline{
   display: flex;
   flex: 1;
+  padding: 30px;
+}
+
+
+iframe{
+  margin: 10px;
+}
+
+.achievements{
+  padding: 30px;
+  display: flex;
 }
