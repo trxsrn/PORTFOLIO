@@ -9,6 +9,30 @@ body
     background-color: transparent;
 }
 
+.header{
+    display: flex;
+}
+
+.header h1{
+    text-align: center;
+    width: 35%;
+    font-weight:bolder;
+}
+
+.line, .line2{
+    height: 5px;
+    margin: 15px 10px;
+    flex: 1;
+  }
+
+  .line{
+    border: 4px solid rgb(255, 255, 255);
+  }
+
+  .line2{
+    border: 4px solid #35181A;
+  }
+
 div.sticky {
     position: sticky;
     float: right;
@@ -129,15 +153,14 @@ div.sticky {
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
     padding: 0 30px;
+    margin: 10PX;
   }
   
   .skill {
-    box-shadow: 5px 5px #888888;
-    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -157,14 +180,8 @@ div.sticky {
     font-size: 14px;
   }
 
-.sub-header
-{
-    text-align: center;
-    align-items: center
-}
-
-.sub-header h1{
-    color: white;
+.services{
+    padding: 40px;
 }
 
 .what {
@@ -195,76 +212,11 @@ div.sticky {
     font-family: 'Montserrat', sans-serif;
 }
 
-.projects
+.projects, .featuredprojects
 {
     padding: 5%;
     background-color: #35181A;
     color: white;
-}
-
-.website{
-    display: flex;
-}
-
-.web
-{
-    margin: 10px;
-}
-
-.web-preview
-{
-    display: flex;
-    margin: 20px 30px;
-}
-
-.web img
-{
-    transform: scaleX(1);  
-    height: 150px;
-    width: 250px;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.447);
-    margin: 20px;
-    z-index: 1;
-}
-
-.web:hover, .app:hover
-{
-    scale: 1.5;
-    z-index: 2;
-}
-
-.website_headers, .mobile_headers
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-.view-all
-{
-    border-bottom: 2px solid #292674;
-    text-decoration: none;
-    color: black;
-}
-
-.web h5, .app h5
-{
-    text-align: center;
-}
-
-.app-preview
-{
-    display: flex;
-    margin: 20px 30px;
-}
-
-.app img
-{
-    transform: scaleX(1);  
-    height: 100px;
-    width: 100px;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.447);
-    margin: 20px;
-    z-index: 1;
 }
 
 .contactme{
