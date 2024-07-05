@@ -1,7 +1,3 @@
-body{
-  background-color: white;
-}
-
 .header{
   display: flex;
 }
@@ -19,7 +15,7 @@ body{
   flex: 1;
 }
 
-.timeline img{
-  height: 350px;
-  width: 350px;
+.timeline{
+  display: flex;
+  flex: 1;
 }
