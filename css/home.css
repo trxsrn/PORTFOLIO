@@ -9,6 +9,19 @@ body
     background-color: transparent;
 }
 
+div.sticky {
+    position: sticky;
+    float: right;
+    color: white;
+    padding: 20px 22px;
+    margin: 20px;
+    top: 90%;
+    background: rgba(255, 255, 255, 0.233);
+    color: #ffffff;
+    border-radius: 50%;
+  }
+
+
 .front-back{
     background-image: url(img/FORMAL\ LANDSCAPE.png);
     background-size: cover;
@@ -43,55 +56,40 @@ body
 }
 
 .about-back{
-    background-color: #7d6b57;
     display: flex;
+    background-color: #E0A75E;
 }
 
 .about
 {
-    color: white;
-    height: 70vh;
+    color: rgb(52, 51, 51);
+    height: fit-content;
     position: relative;
-    padding: 10%;
-    width: 50%;
+    padding: 5% 5% ;
     transform: translateX(-150px);
     opacity: 0;
     transition: 1s all ease;
 }
+
+.about img{
+    height: 350px;
+    width: max-content;
+}
   
 .about.appear{
-transform: translateY(0);
-opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.about-details{
+    margin: auto;
 }
 
 .about h2
 {
-    border-left: 5px solid rgb(93, 43, 6);
-    padding-left: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    font-weight: bolder;
 }
-
-.about p
-
-
-.about-details
-{
-    background-color: #00000070;
-    height: 90vh;
-    width: 100%;
-}
-
-.details
-{
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    width: 60%;
-    color: white;
-    padding: 20px;
-    
-}
-
 
 .about h3
 {
@@ -169,7 +167,7 @@ opacity: 1;
 .projects
 {
     padding: 5%;
-    background-color: #879e82;
+    background-color: #973131;
 }
 
 .website{
@@ -259,15 +257,54 @@ opacity: 1;
 
 @media (max-width: 400px) {
 
+    .front-back{
+        background-image: url(img/ME\ WHOLE\ BODY.jpg);
+        height: max-content;
+    }
+    
+
     .front h1{
-        margin: 100px;
+        top: 60%;
+        margin: 50px;
     }
 
     .about{
         width: 100%;
+        height: fit-content;
+        padding: 10px;
     }
+
+    .about h2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-back{
+        flex-direction: column;
+        padding: 20px;
+    }
+
     .what{
         flex-direction: column;
+    }
+
+    .contactme{
+
+        height: fit-content;
+    }
+    
+    .contactme h1, label{
+        color: white;
+    }
+    
+    .contact{
+        padding: 50px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.349);
+        margin: 0;
+        border-radius: 20px;
     }
 }
 

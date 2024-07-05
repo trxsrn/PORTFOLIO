@@ -1,23 +1,27 @@
+/* Reset padding and margin for all elements */
 * {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Style for navigation bar */
 nav {
     display: flex;
     align-items: center;
-    background-color: tra;
-    color: black;
-    padding: 50px;
+    background-color: transparent; 
+    color: white; /* Updated text color */
+    padding: 30px; /* Reduced padding for better spacing */
     z-index: 9999999;
     height: 5vh;
 }
 
+/* Flex container for logo */
 .logo {
     flex: 1;
 }
 
+/* Style for logo link */
 .logo a {
     text-decoration: none;
     color: white;
@@ -25,15 +29,53 @@ nav {
     text-align: center;
 }
 
-nav li{
+/* Remove default list style for menu items */
+nav li {
     list-style: none;
 }
 
-nav li a
-{
+/* Style for menu links */
+nav li a {
     text-decoration: none;
     color: white;
     padding-right: 20px;
 }
 
+/* Hide menu icon by default */
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
+/* Flex container for menu */
+nav .menu {
+    display: flex;
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+    /* Hide the menu initially */
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show the menu when the 'active' class is added */
+    nav .menu.active {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    /* Style for menu items in the dropdown */
+    nav .menu li {
+        margin: 10px 0;
+    }
+
+    /* Display the menu icon */
+    nav .menu-icon {
+        display: block;
+    }
+}
