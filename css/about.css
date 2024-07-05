@@ -21,12 +21,70 @@
   padding: 30px;
 }
 
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.skill {
+  box-shadow: 5px 5px #888888;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 0; /* Remove margin to use the grid gap instead */
+}
+
+.rating {
+  padding: 5px 20px;
+}
+
+.rating h5, p{
+  margin: 0;
+}
+
+.rating p{
+  font-size: 14px;
+}
+
+
+.article{
+  display: flex;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid rgb(72, 72, 72);
+  margin: 20px;
+  box-shadow: 2px solid black;
+}
+
+.article a{
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.article p{
+  font-size: 12px;
+}
+
+.article img{
+  height: auto;
+  width: 200px;
+}
+
+.article-details{
+  padding: 20px;
+}
+
 
 iframe{
   margin: 10px;
 }
 
-.achievements{
+.achievements, .certificates{
   padding: 30px;
   display: flex;
 }
