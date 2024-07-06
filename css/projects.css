@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.projects{
+    color: white;
+    height: auto;
+    margin: 20px;
+}
+
+.header{
+    display: flex;
+}
+
+.header h1{
+    text-align: center;
+    width: 35%;
+    font-weight:bolder;
+}
+
+.line, .line2{
+    height: 5px;
+    margin: 15px 10px;
+    flex: 1;
+}
+
+.line{
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.line2{
+    border: 4px solid #35181A;
+}
+
+.groupprojects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchbar{
+    background-color: white;
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.searchbar .searchfld{
+    border: none;
+}
+
