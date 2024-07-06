@@ -219,6 +219,53 @@ div.sticky {
     color: white;
 }
 
+.projectss{
+    display: flex;
+}
+
+.sampleproject{
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #ffffff;
+    flex: 1;
+}
+
+.sampleproject::after{
+    margin: 10px;
+}
+
+.sampleproject img{
+    width:auto;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-details{
+    padding: 10px;
+    color: black;
+    margin-top: 0;
+
+}
+
+.tags{
+    display: flex;
+}
+
+.tags li{
+    list-style-type: none;
+    padding: 5px;
+    background: #5e3739;
+    margin: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.project-details pre{
+
+}
+
 .contactme{
 
     height: 100vh;
