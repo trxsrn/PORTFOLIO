@@ -4,14 +4,21 @@
     background-size: cover;
 }
 
-.front h1, label{
-    color: white;
+.contact{
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.347);
+    width: 55%;
+    padding: 50px;
+    color: white
 }
 
-.front{
-    padding: 50px;
-    width: 50%;
-    background: rgba(255, 255, 255, 0.349);
-    margin: 5% 25%;
-    border-radius: 20px;
+.socials{
+    display: flex;
+    margin: 10px 0;
+    width: 30%;
+}
+
+.socials p{
+    text-align: left;
+    margin: auto 10px;
 }

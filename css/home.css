@@ -219,16 +219,13 @@ div.sticky {
     color: white;
 }
 
-.projectss{
-    display: flex;
-}
-
 .sampleproject{
-    border: 2px solid white;
     width: fit-content;
-    border-radius: 20px;
+    display: flex;
+    color: white;
     background-color: #ffffff;
-    flex: 1;
+    width: 100%;
+    margin: 50px auto;
 }
 
 .sampleproject::after{
@@ -238,32 +235,24 @@ div.sticky {
 .sampleproject img{
     width:auto;
     height: 300px;
-    border-radius: 20px 20px 0 0;
 }
 
 .project-details{
-    padding: 10px;
+    padding: 30px;
     color: black;
-    margin-top: 0;
-
+    margin: auto;
 }
 
-.tags{
-    display: flex;
+.allprojectsbtn{
+    text-align: center;
+    padding: 10px;
 }
 
-.tags li{
-    list-style-type: none;
-    padding: 5px;
-    background: #5e3739;
-    margin: 5px;
-    color: white;
-    border-radius: 10px;
-    font-size: 10px;
-}
-
-.project-details pre{
-
+.allprojectsbtn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #35181A;
 }
 
 .contactme{
