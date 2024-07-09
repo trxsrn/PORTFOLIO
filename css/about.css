@@ -136,6 +136,11 @@ iframe{
 }
 
 @media (max-width: 400px) {
+
+  .carousel-item .active{
+    height: 0;
+  } 
+  
   .educational_background .header h1{
     font-size: 16px;
   }

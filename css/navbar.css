@@ -53,6 +53,25 @@ nav .menu {
     display: flex;
 }
 
+/* Style for menu list */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for individual menu items */
+.menu ul li {
+    margin: 0 15px;
+}
+
+/* Style for active menu item link */
+.menu ul li.active a {
+    text-decoration: underline;
+}
+
 /* Media query for screens smaller than 400px */
 @media (max-width: 400px) {
     /* Hide the menu initially */
@@ -60,18 +79,26 @@ nav .menu {
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
     }
 
     /* Show the menu when the 'active' class is added */
     nav .menu.active {
-        display: inline-flex;
+        display: block;
         flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        top: 8%; /* Example adjustment */
+        margin: 0; /* Example adjustment */
+        left: 0; /* Example adjustment */
     }
 
+    .menu  ul{
+        display: block;
+    }
     /* Style for menu items in the dropdown */
     nav .menu li {
-        margin: 10px 0;
+        padding: 4px 30px;
     }
 
     /* Display the menu icon */

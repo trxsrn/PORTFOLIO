@@ -18,20 +18,40 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="aboutme.html">ABOUT ME</a></li>
-            <li><a href="projects.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
         </div>
-    </nav> 
+    </nav>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+            // Toggle menu function
             $('.menu-icon').click(function() {
                 $('.menu').toggleClass('active');
+                var icon = $(this).find('i');
+                if (icon.hasClass('fa-bars')) {
+                    icon.removeClass('fa-bars').addClass('fa-x');
+                } else {
+                    icon.removeClass('fa-x').addClass('fa-bars');
+                }
+            });
+
+            // Add active class to current page link
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/')+1);
+            $('.menu ul li').removeClass('active');
+            $('.menu ul li').each(function() {
+                var link = $(this).find('a').attr('href');
+                if (link == filename) {
+                    $(this).addClass('active');
+                }
             });
         });
-    </script>  
+    </script>
 </body>
 </html>
