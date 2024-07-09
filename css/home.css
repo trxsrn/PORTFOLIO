@@ -34,15 +34,12 @@ body
   }
 
 div.sticky {
-    position: sticky;
-    float: right;
+    position: fixed;
+    left: 49.5%;
     color: white;
-    padding: 20px 22px;
-    margin: 20px;
+    margin: 10px;
     top: 90%;
-    background: rgba(255, 255, 255, 0.233);
     color: #ffffff;
-    border-radius: 50%;
   }
 
 
@@ -57,7 +54,7 @@ div.sticky {
     display: flex;
     width: 100%;
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     color: white;
 }
