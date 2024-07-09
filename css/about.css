@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+ 
 .header{
   display: flex;
 }
@@ -15,50 +17,89 @@
   flex: 1;
 }
 
-.timeline{
-  display: flex;
-  flex: 1;
+.educational_background, .certificates{
+  background-color: #35181A;
   padding: 30px;
 }
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  width: 100%;
-  padding: 0 30px;
+.educational_background .line, .certificates .line{
+  border: 3px solid rgb(255, 255, 255);
 }
 
-.skill {
-  box-shadow: 5px 5px #888888;
-  border: 2px solid black;
-  border-radius: 20px;
+.educational_background h1, .tertiary h2 , .tertiary h6, .certificates h1{
+  color: white;
+}
+
+.timeline{
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: 58vh;
+}
+
+.content {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.content::after {
+  content: ''; /* This should be the correct icon code */
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: -20px;
+  border: 4px solid #ffffff;
+  top: 1px;
+  background-color: white;
+  color: #35181A;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+.left::after{
+  left: 97.5%;
+}
+
+.right::after{
+  left: -20px;
+}
+
+.achievement{
   display: flex;
-  align-items: center;
-  padding: 15px;
-  margin: 0; /* Remove margin to use the grid gap instead */
+  flex-wrap: wrap;
 }
-
-.rating {
-  padding: 5px 20px;
-}
-
-.rating h5, p{
-  margin: 0;
-}
-
-.rating p{
-  font-size: 14px;
-}
-
 
 .article{
   display: flex;
-  width: 50%;
   border-radius: 10px;
   border: 1px solid rgb(72, 72, 72);
   margin: 20px;
   box-shadow: 2px solid black;
+  width: 47%;
 }
 
 .article a{
@@ -84,7 +125,68 @@ iframe{
   margin: 10px;
 }
 
-.achievements, .certificates{
+.achievement, .certificate{
   padding: 30px;
   display: flex;
+}
+
+.achievements{
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+@media (max-width: 400px) {
+  .educational_background .header h1{
+    font-size: 16px;
+  }
+
+  .timeline::before{
+    left: 10px;
+    height: 70vh;
+  }
+
+
+  .right{
+    left: 10px;
+  }
+
+  .left{
+    text-align: left;
+  }
+
+  .left::after{
+    left: -10px;  
+  }
+
+  .content
+  {
+    width: 100%;
+  }
+
+  .achievement, .certificate{
+    padding: 0;
+    display: block;
+  }
+
+  .article{
+    display: block;
+    width: auto;
+  }
+
+  .article img{
+    width: 300px;
+  }
+
+  .certificates{
+    display: block;
+    width: auto;
+  }
+
+  .certificate{
+    width: 300px;
+  }
+
+  .card{
+    width: 325px !important;
+  }
 }
